@@ -1,0 +1,27 @@
+[package]
+name = "rust-bdd-playground"
+version = "0.1.0"
+edition = "2021"
+
+[[test]]
+name = "private_api"
+harness = false
+
+[[test]]
+name = "public_api"
+harness = false
+
+[dependencies]
+tokio = { version = "1.9.0", features = ["full"] }
+reqwest = "0.12.5"
+chrono = "0.4"
+sha2 = "0.10"
+hmac = "0.12"
+base64 = "0.21"
+url = "2.2"
+serde_urlencoded = "0.7.1"
+serde_json = "1.0.121"
+serde = { version = "1.0.204", features = ["derive"] }
+
+[dev-dependencies]
+cucumber = "0.21.1"
