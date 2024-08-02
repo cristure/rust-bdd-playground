@@ -7,9 +7,6 @@ WORKDIR /usr/src/myapp
 # Copy the Cargo.toml and Cargo.lock files
 COPY Cargo.toml ./
 
-# Copy the source code
-COPY src ./src
-
 # Copy the tests
 COPY tests ./tests
 
